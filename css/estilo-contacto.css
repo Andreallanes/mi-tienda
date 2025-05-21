@@ -21,14 +21,6 @@ section {
     margin: 8px;
 }
 
-.margen {
-    margin: 8px;
-}
-
-p {
-    margin:15px;
-}
-
 .contenedor-datos {
     margin: 15px;
 }
@@ -108,5 +100,11 @@ button {
 @media only screen and (min-width: 992px) {
     main{
         grid-template-columns: 1fr 1fr;
+    }
+    .margen {
+        margin: 2rem;
+    }
+    p {
+        margin:3rem;
     }
 }

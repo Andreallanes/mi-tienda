@@ -7,7 +7,6 @@ main {
     font-weight: 300;
     font-style: normal;
     font-size: 2.0rem;
-    width:100%;
     height: auto;
     display: grid;
 }
@@ -61,9 +60,24 @@ button {
     background-color:  #d6a0fb;
     color: white;
     font-size: 1.5rem;
+    margin: 15px;
 }
 
-
+.rating {
+    display:inline-block;
+}
+.rating input {
+    display: none;
+}
+.rating label {
+    cursor:pointer;
+    font-size: 24px;
+    color:  #6a0dab;
+}
+.rating label:hover,
+.rating input:checked + label{
+    color:gold;
+}
 
 
 @media only screen and (max-width: 768px) {
@@ -74,16 +88,19 @@ button {
     section{
         width: 95%;
     }
-    input,
     textarea {
-        width:80%;
+        width:70%;
         font-size: 1rem;
     }
     header, 
-    footer[
-        width: 90%;
-    ]
+    footer {
+        width: 85%;
+    }
     select {
+        font-size: 1rem;
+    }
+    .tamaño{
+        width: 90%;
         font-size: 1rem;
     }
 }

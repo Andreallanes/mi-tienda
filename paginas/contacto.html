@@ -39,11 +39,11 @@
                 <fieldset class="contenedor-datos">
                     <legend>Datos Personales</legend>
                     <label for="firstname">Nombre: </label>                   
-                    <input size="30" type="text" name="firstname" placeholder="Ingrese su nombre aquí . . ." required> <br>
+                    <input class="tamaño" size="30" type="text" name="firstname" placeholder="Ingrese su nombre aquí . . ." required> <br>
                     <label for="lastname">Apellido: </label>
-                    <input size="30" type="text" name="firstname" placeholder="Ingrese su apellido aquí . . ."><br>    
+                    <input class="tamaño" size="30" type="text" name="firstname" placeholder="Ingrese su apellido aquí . . ."><br>    
                     <label for="email">Mail: </label>
-                    <input type="email" name="email" placeholder="Ingrese su mail aquí . . . " required> <br>
+                    <input class="tamaño" type="email" name="email" placeholder="Ingrese su mail aquí . . . " required> <br>
                 </fieldset>
                 <label class="contenedor-datos" for="tema">Motivo de Contacto</label>
                 <select name="tema" id="tema">
@@ -52,11 +52,34 @@
                     <option value="sugerencia">Sugerencia</option>
                     <option value="comentario">Comentario</option>
                 </select>
-                <p>¿Realizaste una compra en nuestro comercio? <br>
-                    <input type="radio" name="cliente" value="Si">Si
+                <p class="alinear">¿Realizaste una compra en nuestro comercio? <br>
+                    <input type="radio" name="cliente" value="Si">Si <br>
                     <input type="radio" name="cliente" value="No">No
                 </p> 
-                <p>¿Como nos conociste? <br>                        
+                <fieldset class="rating contenedor-datos">
+                    <legend>Calificacion</legend>
+                    <input type="radio" id="star5" name="rating" value="5"> 
+                    <label for="star5">
+                        <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> Excelente
+                    </label> <br>
+                    <input type="radio" id="star5" name="rating" value="4">
+                    <label for="star4">
+                        </i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> Muy bueno
+                    </label> <br>
+                    <input type="radio" id="star5" name="rating" value="3">
+                    <label for="star3">
+                        <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> Bueno
+                    </label> <br>
+                    <input type="radio" id="star5" name="rating" value="2">
+                    <label for="star2">
+                        <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> Regular
+                    </label> <br>
+                    <input type="radio" id="star5" name="rating" value="1">
+                    <label for="star1">
+                        <i class="fa-solid fa-star"></i> Malo
+                    </label> <br>
+                </fieldset>
+                <p class="alinear">¿Como nos conociste? <br>                        
                     <input type="checkbox" name="conocio" value="recomendacion">Recomendación de un amigo o conocido <br>
                     <input type="checkbox" name="conocio" value="redesSociales">Nos viste en nuestras redes Sociales <br>
                     <input type="checkbox" name="conocio" value="frecuentas">Frecuentas la zona de nuestro local físico
@@ -64,7 +87,7 @@
                 <label class="contenedor-datos" for="comentarios">Comentarios: </label> <br>
                 <textarea class="contenedor-datos" name="comentarios" rows="5" cols="30" placeholder="Ingrese su comentario aquí . . ." required></textarea>
                 <br>
-                <button class ="contenedor-datos" type="submit">Enviar</button>
+                <button type="submit">Enviar</button>
                 <button type="reset">Borrar</button>
             </form>
         </section>

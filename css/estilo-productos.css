@@ -21,7 +21,13 @@ article {
     text-align: center;
     color:  #6a0dab;
     width: 25%;
-    height: auto;
+    overflow: auto;
+}
+
+.fijado {
+    position: sticky;
+    top:0;
+    background-color: #e5c7fa;
 }
 
 section {
@@ -45,4 +51,16 @@ section {
 p {
     font-size: 1.3rem;
     font-weight: 350;
+}
+
+@media only screen and (max-width: 992px) {
+    article {
+        height: 250px;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    article {
+        height: 600px;
+    }
 }

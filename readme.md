@@ -13,6 +13,8 @@ En la sección Inicial se utilizó contenido multimedia: una imágen y un iframe
 En la sección Productos se utilizó contenido multimedia: imágenes de los artículos disponibles.
 
 En la sección de Contacto, el Formulario será enviado utilizando Formspree.
-En esta sección el main se hará responsiva mediante el uso de Media Queries para que se adapte a celulares, tablets y computadoras. Y se utilizará Grid para el diseño.
+En esta sección en el main se utilizará Grid para el diseño.
 
-En la sección Reseñas el main se organizará utilizando Grid, y se utilizara Media Queries para que se adapte a los dispositivos.
+En la sección Reseñas el main se organizará utilizando Grid.
+
+En todas las páginas se utilizará Media Query para que se adapte a todos los dispositivos. 

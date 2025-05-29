@@ -22,6 +22,21 @@ section {
     color:  #6a0dab;
 }
 
-.letra {
-    font-size: 2rem;
+
+@media (max-width: 600 px) {
+    .letra{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 601 px) and (max-width: 1024px) {
+    .letra{
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1025 px) {
+    .letra{
+        font-size: 2rem;
+    }
 }
